@@ -11,12 +11,18 @@ function  increaseRankBy(n){
   let children1 = firstList.children
 
   for (let i = 0, l = children1.length; i < l; i++) {
-    (parseInt(children1[i].innerHTML))=(i + n)
+    children1[i].innerHTML=(parseInt(children1[i].innerHTML) + n)
   }
-  children2 = secondList.children
-  start = 12
+  let children2 = secondList.children
+
 
   for (let i = 0, l = children2.length; i < l; i++) {
-(parseInt(children2[i].innerHTML))=(i + n)
+children2[i].innerHTML=(parseInt(children2[i].innerHTML)+ n)
   }
+}
+function deepestChild(){
+  return document.querySelector( '#grand-node div div div div')
+
+
+
 }
